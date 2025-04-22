@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Volunteer - Disaster Management</title>
+  <link rel="stylesheet" href="volunteer.css" />
+  <script src="volunteer.js" defer></script>
+</head>
+<body>
+  <header>
+    <h1>Volunteer for Disaster Relief</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="types.html">Disaster Types</a></li>
+        <li><a href="alerts.html">Alerts</a></li>
+        <li><a href="emergency-kit.html">Emergency Kit</a></li>
+        <li><a href="resources.html">Resources</a></li>
+        <li><a href="faq.html">FAQ</a></li>
+        <li><a href="volunteer.html" class="active">Volunteer</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="volunteer-form">
+      <h2>Sign Up as a Volunteer</h2>
+      <form id="volunteerForm">
+        <div class="form-group">
+          <label for="name">Full Name</label>
+          <input type="text" id="name" name="name" required />
+        </div>
+
+        <div class="form-group">
+          <label for="email">Email Address</label>
+          <input type="email" id="email" name="email" required />
+        </div>
+
+        <div class="form-group">
+          <label for="phone">Phone Number</label>
+          <input type="text" id="phone" name="phone" required />
+        </div>
+
+        <div class="form-group">
+          <label for="skills">Skills (optional)</label>
+          <textarea id="skills" name="skills"></textarea>
+        </div>
+
+        <div class="form-group">
+          <button type="submit">Submit</button>
+        </div>
+      </form>
+
+      <div id="confirmationMessage" class="confirmation-message"></div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Disaster Management Authority</p>
+  </footer>
+</body>
+</html>

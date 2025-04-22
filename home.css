@@ -1,0 +1,313 @@
+/* ----- Base Styling ----- */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: url('https://imgv3.fotor.com/images/gallery/black-rock-texture-background.jpg') no-repeat center center fixed;
+  background-size: cover;
+  color: white;
+}
+
+/* ----- Header ----- */
+header {
+  background-color: rgba(0, 0, 0, 0.8);
+  padding: 15px;
+  text-align: center;
+  position: relative;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 28px;
+}
+
+/* ----- Menu Toggle Button (Mobile) ----- */
+.menu-toggle {
+  display: none;
+  color: white;
+  font-size: 20px;
+  cursor: pointer;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+
+/* ----- Navigation ----- */
+nav {
+  margin-top: 10px;
+}
+
+.nav-links {
+  list-style: none; /* Removes bullets */
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+}
+
+.nav-links li {
+  position: relative;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: white;
+  padding: 8px 12px;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 5px;
+}
+
+.nav-links a:hover,
+.nav-links a.active {
+  background-color: rgba(255, 255, 255, 0.3);
+  color: #ffd700;
+}
+
+.nav-links a:visited {
+  color: white;
+}
+
+/* ----- Dropdown ----- */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.9);
+  min-width: 160px;
+  z-index: 1;
+  top: 35px;
+  left: 0;
+}
+
+.dropdown-content li a {
+  display: block;
+  padding: 10px;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* ----- Intro Section ----- */
+.intro {
+  text-align: center;
+  padding: 60px 20px;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+button {/* ===== Base Styles ===== */
+  body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: url('https://imgv3.fotor.com/images/gallery/black-rock-texture-background.jpg') no-repeat center center fixed;
+    background-size: cover;
+    color: white;
+  }
+  
+  /* ===== Header ===== */
+  header {
+    background-color: rgba(0, 0, 0, 0.85);
+    padding: 20px;
+    text-align: center;
+    position: relative;
+  }
+  
+  header h1 {
+    margin: 0;
+    font-size: 32px;
+  }
+  
+  /* ===== Toggle Button for Mobile ===== */
+  .menu-toggle {
+    display: none;
+    font-size: 28px;
+    cursor: pointer;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    color: white;
+  }
+  
+  /* ===== Navigation Menu ===== */
+  .nav-links {
+    list-style: none;
+    padding: 0;
+    margin: 10px 0 0;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+  }
+  
+  .nav-links li {
+    margin: 0;
+  }
+  
+  .nav-links a {
+    color: white;
+    text-decoration: none;
+    padding: 8px 14px;
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.1);
+    transition: background 0.3s;
+  }
+  
+  .nav-links a:hover,
+  .nav-links a.active {
+    background-color: rgba(255, 255, 255, 0.3);
+    color: #ffcc00;
+  }
+  
+  .nav-links a:visited {
+    color: white;
+  }
+  
+  /* ===== Intro Section ===== */
+  .intro {
+    text-align: center;
+    padding: 60px 20px;
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+  
+  .intro button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #ffaa00;
+    color: black;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  /* ===== Cards Section ===== */
+  .card-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    padding: 40px 20px;
+  }
+  
+  .card {
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    padding: 20px;
+    width: 250px;
+    text-align: center;
+    color: white;
+    transition: transform 0.3s;
+  }
+  
+  .card:hover {
+    transform: scale(1.05);
+  }
+  
+  .card h3 {
+    color: #ffcc00;
+  }
+  
+  .card .btn {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 8px 14px;
+    background-color: #ffaa00;
+    color: black;
+    text-decoration: none;
+    border-radius: 5px;
+  }
+  
+  /* ===== Footer ===== */
+  footer {
+    background-color: rgba(0, 0, 0, 0.8);
+    text-align: center;
+    padding: 20px;
+    color: white;
+  }
+  
+  /* ===== Responsive ===== */
+  @media (max-width: 768px) {
+    .menu-toggle {
+      display: block;
+    }
+  
+    .nav-links {
+      display: none;
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .nav-links.active {
+      display: flex;
+    }
+  }
+  
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #ffaa00;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  color: black;
+}
+
+/* ----- Cards Section ----- */
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  padding: 30px 20px;
+}
+
+.card {
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+  padding: 20px;
+  width: 250px;
+  color: white;
+  text-align: center;
+  transition: transform 0.2s;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+.card h3 {
+  margin-top: 0;
+  color: #ffd700;
+}
+
+.card .btn {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 8px 14px;
+  background-color: #ffaa00;
+  color: black;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+/* ----- Footer ----- */
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* ----- Responsive (Mobile) ----- */
+@media (max-width: 768px) {
+  .menu-toggle {
+    display: block;
+  }
+
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .nav-links.active {
+    display: flex;
+  }
+}
