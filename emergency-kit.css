@@ -1,4 +1,10 @@
-body { font-family: Arial, sans-serif; margin: 0; padding: 0; background: #f8f9fa; color: #333; }
+body { font-family: Arial, sans-serif; margin: 0; padding: 0; 
+     background: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTMWKXUxU7LHoZrtePbMZm72ufIDVGNZfJxbA&s') center/cover no-repeat fixed;
+  color: #333;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+     }
 
 header { background-color: #0d47a1; color: white; padding: 20px; text-align: center; }
 
