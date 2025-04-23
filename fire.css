@@ -2,13 +2,15 @@ body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   margin: 0;
   padding: 0;
-  background: #f6f6f6;
-  color: #222;
-   
+  background: url('https://assets.telegraphindia.com/telegraph/2022/Dec/1672302541_cambodia.jpg') center/cover no-repeat fixed;
+  color: #333;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
 
 header {
-  background-color: #0077b6;
+  background-color: gold;
   color: white;
   padding: 20px;
   text-align: center;
