@@ -2,10 +2,11 @@ body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   margin: 0;
   padding: 0;
-   background: url('https://unsplash.com/photos/grayscale-photo-of-man-in-black-jacket-sitting-on-chair-TfkWkEQ530g') center/cover no-repeat fixed;
+  background: url('https://images.unsplash.com/photo-1543321269-9d86d3680e1c') center/cover no-repeat fixed;
   color: #222;
   min-height: 100vh;
-  position: relative;
+  display: flex;
+  flex-direction: column;
 }
 
 header {
@@ -20,6 +21,7 @@ nav ul {
   justify-content: center;
   list-style: none;
   padding: 0;
+  flex-wrap: wrap;
 }
 
 nav ul li {
@@ -35,7 +37,11 @@ nav ul li a {
 main {
   padding: 40px;
   max-width: 800px;
-  margin: auto;
+  margin: 20px auto;
+  flex: 1;
+  background-color: rgba(255, 255, 255, 0.9);
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 }
 
 h2 {
@@ -46,4 +52,28 @@ ul#tipsList {
   padding-left: 20px;
   margin-top: 10px;
   list-style: disc;
+}
+
+footer {
+  background-color: #8e44ad;
+  color: white;
+  text-align: center;
+  padding: 15px;
+  margin-top: auto;
+}
+
+@media (max-width: 600px) {
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  nav ul li {
+    margin: 5px 0;
+  }
+  
+  main {
+    padding: 20px;
+    margin: 10px;
+  }
 }
