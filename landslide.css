@@ -10,7 +10,7 @@ body {
 }
 
 header {
-  background-color: brown;
+  background-color: green;
   color: white;
   padding: 20px;
   text-align: center;
@@ -40,7 +40,7 @@ main {
 }
 
 h2 {
-  color: #4a148c;
+  color: white;
 }
 
 ul#tipsList {
