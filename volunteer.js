@@ -10,14 +10,12 @@ document.addEventListener("DOMContentLoaded", () => {
     const phone = document.getElementById("phone").value;
     const skills = document.getElementById("skills").value;
 
-    // Form validation (simple checks)
     if (!name || !email || !phone) {
       alert("Please fill in all required fields.");
       return;
     }
 
-    // Simulate form submission (real-world applications would send data to a server)
     confirmationMessage.textContent = `Thank you for signing up, ${name}! We will get in touch with you soon.`;
-    form.reset(); // Reset form after submission
+    form.reset();
   });
 });
