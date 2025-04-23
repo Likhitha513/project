@@ -3,20 +3,20 @@ document.addEventListener("DOMContentLoaded", () => {
   
   if (tipsList) {
     const tips = [
-      "Before: Secure heavy furniture and items on shelves.",
-      "Before: Create an emergency plan with your family.",
-      "Before: Prepare an emergency kit with supplies.",
-      "During: Drop, cover, and hold under a sturdy table.",
-      "During: Stay away from windows and exterior walls.",
-      "During: If outdoors, move to an open area away from buildings.",
-      "After: Be prepared for aftershocks and check for injuries.",
-      "After: Do not use elevators and watch out for gas leaks.",
-      "After: Listen to official information sources for updates."
+      {phase: "Before", text: "Secure heavy furniture and items on shelves to prevent falling."},
+      {phase: "Before", text: "Create an emergency plan with meeting points and contacts."},
+      {phase: "Before", text: "Prepare an emergency kit with food, water, and first aid supplies."},
+      {phase: "During", text: "DROP to the ground, take COVER under sturdy furniture, and HOLD ON."},
+      {phase: "During", text: "Stay away from windows, mirrors, and heavy objects that could fall."},
+      {phase: "During", text: "If outdoors, move to an open area away from buildings and power lines."},
+      {phase: "After", text: "Expect aftershocks and be ready to drop, cover, and hold on again."},
+      {phase: "After", text: "Check for injuries and damage, but avoid using phones unless emergency."},
+      {phase: "After", text: "Listen to official emergency broadcasts for updates and instructions."}
     ];
 
     tips.forEach(tip => {
       const li = document.createElement("li");
-      li.textContent = tip;
+      li.innerHTML = `<strong>${tip.phase}:</strong> ${tip.text}`;
       tipsList.appendChild(li);
     });
   } else {
