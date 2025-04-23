@@ -2,7 +2,7 @@ body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   margin: 0;
   padding: 0;
-  background: url('https://assets.telegraphindia.com/telegraph/2022/Dec/1672302541_cambodia.jpg') center/cover no-repeat fixed;
+  background: url('https://media.telanganatoday.com/wp-content/uploads/2022/04/fire-accident-1.jpg') center/cover no-repeat fixed;
   color: #333;
   min-height: 100vh;
   display: flex;
@@ -10,41 +10,103 @@ body {
 }
 
 header {
-  background-color: gold;
+  background-color: black;
   color: white;
   padding: 20px;
   text-align: center;
-}
-
-nav ul {
-  display: flex;
-  justify-content: center;
-  list-style: none;
-  padding: 0;
-}
-
-nav ul li {
-  margin: 0 15px;
-}
-
-nav ul li a {
-  color: white;
-  text-decoration: none;
-  font-weight: bold;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
 }
 
 main {
-  padding: 40px;
-  max-width: 800px;
-  margin: auto;
+  padding: 30px;
+  flex: 1;
+}
+
+.info {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+h1, h2 {
+  text-align: center;
 }
 
 h2 {
-  color: #4a148c;
+  color: white;
+  margin-bottom: 30px;
 }
 
-ul#tipsList {
-  padding-left: 20px;
-  margin-top: 10px;
-  list-style: disc;
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 25px;
+}
+
+.tip-card {
+  background-color: rgba(255, 255, 255, 0.95);
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 25px;
+  width: 300px;
+  transition: all 0.3s ease;
+  border-left: 5px solid;
+}
+
+.tip-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.tip-phase {
+  font-weight: bold;
+  font-size: 1.1rem;
+  margin-bottom: 10px;
+  padding-bottom: 5px;
+  border-bottom: 1px solid #eee;
+}
+
+.tip-text {
+  color: #444;
+  line-height: 1.6;
+}
+
+/* Phase-specific colors */
+.tip-card[data-phase="Before"] {
+  border-left-color: #2e7d32; /* Green */
+}
+.tip-card[data-phase="During"] {
+  border-left-color: #d32f2f; /* Red */
+}
+.tip-card[data-phase="After"] {
+  border-left-color: #0288d1; /* Blue */
+}
+
+.tip-card[data-phase="Before"] .tip-phase {
+  color: #2e7d32;
+}
+.tip-card[data-phase="During"] .tip-phase {
+  color: #d32f2f;
+}
+.tip-card[data-phase="After"] .tip-phase {
+  color: #0288d1;
+}
+
+footer {
+  background-color: black;
+  color: white;
+  text-align: center;
+  padding: 15px;
+  margin-top: auto;
+}
+
+@media (max-width: 768px) {
+  .card-container {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .tip-card {
+    width: 85%;
+  }
 }
