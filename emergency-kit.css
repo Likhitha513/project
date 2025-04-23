@@ -6,7 +6,7 @@ body { font-family: Arial, sans-serif; margin: 0; padding: 0;
   flex-direction: column;
      }
 
-header { background-color: #0d47a1; color: white; padding: 20px; text-align: center; }
+header { background-color: red; color: white; padding: 20px; text-align: center; }
 
 nav ul { list-style: none; display: flex; justify-content: center; margin: 10px 0 0; padding: 0; }
 
