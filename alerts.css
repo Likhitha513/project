@@ -1,9 +1,19 @@
 body {
   font-family: Arial, sans-serif;
-  margin: 0;
-  padding: 0;
-  background: #fefefe;
+  margin: 0
+  padding: 0;  background: url('https://cdn3.vectorstock.com/i/1000x1000/40/62/alert-rubber-stamp-vector-12324062.jpg') no-repeat center center fixed;
+  background-size: cover;
   color: #222;
+}
+
+/* Optional: Dark overlay for readability */
+body::before {
+  content: "";
+  position: fixed;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background: rgba(255, 255, 255, 0.8);
+  z-index: -1;
 }
 
 header {
