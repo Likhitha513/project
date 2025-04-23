@@ -1,301 +1,205 @@
-/* ----- Base Styling ----- */
+/* ===== Base Styles ===== */
 body {
   margin: 0;
-  font-family: Arial, sans-serif;
-  background: url('https://imgv3.fotor.com/images/gallery/black-rock-texture-background.jpg') no-repeat center center fixed;
-  background-size: cover;
-  color: white;
+  font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+  background: linear-gradient(rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.85)), 
+              url('https://images.unsplash.com/photo-1584036561566-baf8f5f1b144') center/cover no-repeat fixed;
+  color: #f8f9fa;
+  line-height: 1.6;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
 
-/* ----- Header ----- */
+/* ===== Header ===== */
 header {
-  background-color: rgba(0, 0, 0, 0.8);
-  padding: 15px;
-  text-align: center;
-  position: relative;
+  background: linear-gradient(135deg, #2c3e50 0%, #1a252f 100%);
+  padding: 1rem 2rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
 }
 
 header h1 {
   margin: 0;
-  font-size: 28px;
+  font-size: 1.8rem;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  background: linear-gradient(to right, #fff, #ddd);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
 
-/* ----- Menu Toggle Button (Mobile) ----- */
+/* ===== Navigation ===== */
 .menu-toggle {
   display: none;
   color: white;
-  font-size: 20px;
+  font-size: 1.5rem;
   cursor: pointer;
+  transition: transform 0.3s ease;
   position: absolute;
-  top: 20px;
-  right: 20px;
+  top: 1rem;
+  right: 1.5rem;
 }
 
-/* ----- Navigation ----- */
-nav {
-  margin-top: 10px;
+.menu-toggle:hover {
+  transform: scale(1.1);
 }
 
 .nav-links {
-  list-style: none; /* Removes bullets */
-  padding: 0;
-  margin: 0;
   display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 10px;
+  gap: 0.75rem;
+  padding: 0.5rem 0;
 }
 
 .nav-links li {
   position: relative;
+  list-style: none;
 }
 
-.nav-links a {
-  text-decoration: none;
+.nav-button {
+  background: rgba(255, 255, 255, 0.1);
+  border: none;
   color: white;
-  padding: 8px 12px;
-  background-color: rgba(255, 255, 255, 0.1);
-  border-radius: 5px;
+  padding: 0.6rem 1.2rem;
+  border-radius: 30px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+  backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
 }
 
-.nav-links a:hover,
-.nav-links a.active {
-  background-color: rgba(255, 255, 255, 0.3);
-  color: #ffd700;
+.nav-button:hover {
+  background: rgba(255, 255, 255, 0.2);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
 }
 
-.nav-links a:visited {
-  color: white;
+.nav-button.active {
+  background: linear-gradient(135deg, #3498db 0%, #2980b9 100%);
+  box-shadow: 0 4px 8px rgba(41, 128, 185, 0.3);
 }
 
-/* ----- Dropdown ----- */
-.dropdown-content {
-  display: none;
-  position: absolute;
-  background-color: rgba(0, 0, 0, 0.9);
-  min-width: 160px;
-  z-index: 1;
-  top: 35px;
-  left: 0;
+/* ===== Main Content ===== */
+main {
+  flex: 1;
+  padding: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  width: 100%;
 }
 
-.dropdown-content li a {
-  display: block;
-  padding: 10px;
-}
-
-.dropdown:hover .dropdown-content {
-  display: block;
-}
-
-/* ----- Intro Section ----- */
 .intro {
   text-align: center;
-  padding: 60px 20px;
-  background-color: rgba(0, 0, 0, 0.5);
+  padding: 3rem 1rem;
+  margin-bottom: 2rem;
+  background: rgba(0, 0, 0, 0.5);
+  border-radius: 12px;
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
 }
 
-button {/* ===== Base Styles ===== */
-  body {
-    margin: 0;
-    font-family: Arial, sans-serif;
-    background: url('https://imgv3.fotor.com/images/gallery/black-rock-texture-background.jpg') no-repeat center center fixed;
-    background-size: cover;
-    color: white;
-  }
-  
-  /* ===== Header ===== */
-  header {
-    background-color: rgba(0, 0, 0, 0.85);
-    padding: 20px;
-    text-align: center;
-    position: relative;
-  }
-  
-  header h1 {
-    margin: 0;
-    font-size: 32px;
-  }
-  
-  /* ===== Toggle Button for Mobile ===== */
-  .menu-toggle {
-    display: none;
-    font-size: 28px;
-    cursor: pointer;
-    position: absolute;
-    top: 20px;
-    right: 20px;
-    color: white;
-  }
-  
-  /* ===== Navigation Menu ===== */
-  .nav-links {
-    list-style: none;
-    padding: 0;
-    margin: 10px 0 0;
-    display: flex;
-    justify-content: center;
-    gap: 15px;
-    flex-wrap: wrap;
-  }
-  
-  .nav-links li {
-    margin: 0;
-  }
-  
-  .nav-links a {
-    color: white;
-    text-decoration: none;
-    padding: 8px 14px;
-    border-radius: 5px;
-    background-color: rgba(255, 255, 255, 0.1);
-    transition: background 0.3s;
-  }
-  
-  .nav-links a:hover,
-  .nav-links a.active {
-    background-color: rgba(255, 255, 255, 0.3);
-    color: #ffcc00;
-  }
-  
-  .nav-links a:visited {
-    color: white;
-  }
-  
-  /* ===== Intro Section ===== */
-  .intro {
-    text-align: center;
-    padding: 60px 20px;
-    background-color: rgba(0, 0, 0, 0.5);
-  }
-  
-  .intro button {
-    padding: 10px 20px;
-    font-size: 16px;
-    background-color: #ffaa00;
-    color: black;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-  }
-  
-  /* ===== Cards Section ===== */
-  .card-container {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-    justify-content: center;
-    padding: 40px 20px;
-  }
-  
-  .card {
-    background-color: rgba(255, 255, 255, 0.1);
-    border-radius: 10px;
-    padding: 20px;
-    width: 250px;
-    text-align: center;
-    color: white;
-    transition: transform 0.3s;
-  }
-  
-  .card:hover {
-    transform: scale(1.05);
-  }
-  
-  .card h3 {
-    color: #ffcc00;
-  }
-  
-  .card .btn {
-    display: inline-block;
-    margin-top: 10px;
-    padding: 8px 14px;
-    background-color: #ffaa00;
-    color: black;
-    text-decoration: none;
-    border-radius: 5px;
-  }
-  
-  /* ===== Footer ===== */
-  footer {
-    background-color: rgba(0, 0, 0, 0.8);
-    text-align: center;
-    padding: 20px;
-    color: white;
-  }
-  
-  /* ===== Responsive ===== */
-  @media (max-width: 768px) {
-    .menu-toggle {
-      display: block;
-    }
-  
-    .nav-links {
-      display: none;
-      flex-direction: column;
-      align-items: center;
-    }
-  
-    .nav-links.active {
-      display: flex;
-    }
-  }
-  
-  padding: 10px 20px;
-  font-size: 16px;
-  background-color: #ffaa00;
-  border: none;
-  border-radius: 5px;
+.intro h2 {
+  font-size: 2.2rem;
+  margin-bottom: 1rem;
+  background: linear-gradient(to right, #fff, #ddd);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.intro p {
+  font-size: 1.1rem;
+  max-width: 700px;
+  margin: 0 auto 2rem;
+  color: rgba(255, 255, 255, 0.9);
+}
+
+/* ===== Buttons ===== */
+.btn {
+  display: inline-block;
+  padding: 0.75rem 1.75rem;
+  border-radius: 30px;
+  font-weight: 600;
+  text-align: center;
+  text-decoration: none;
   cursor: pointer;
-  color: black;
+  transition: all 0.3s ease;
+  border: none;
+  font-size: 1rem;
 }
 
-/* ----- Cards Section ----- */
+.btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.intro .btn {
+  background: linear-gradient(135deg, #e74c3c 0%, #c0392b 100%);
+  color: white;
+  box-shadow: 0 4px 8px rgba(231, 76, 60, 0.3);
+}
+
+/* ===== Cards ===== */
 .card-container {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 20px;
-  justify-content: center;
-  padding: 30px 20px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+  margin-top: 2rem;
 }
 
 .card {
-  background-color: rgba(255, 255, 255, 0.1);
-  border-radius: 10px;
-  padding: 20px;
-  width: 250px;
-  color: white;
-  text-align: center;
-  transition: transform 0.2s;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 12px;
+  padding: 1.5rem;
+  backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  transition: all 0.4s cubic-bezier(0.25, 0.8, 0.25, 1);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
 }
 
 .card:hover {
-  transform: scale(1.05);
+  transform: translateY(-8px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+  background: rgba(255, 255, 255, 0.15);
 }
 
 .card h3 {
   margin-top: 0;
-  color: #ffd700;
+  color: white;
+  font-size: 1.3rem;
+  margin-bottom: 1rem;
+}
+
+.card p {
+  color: rgba(255, 255, 255, 0.8);
+  margin-bottom: 1.5rem;
 }
 
 .card .btn {
-  display: inline-block;
-  margin-top: 10px;
-  padding: 8px 14px;
-  background-color: #ffaa00;
-  color: black;
-  text-decoration: none;
-  border-radius: 5px;
+  background: linear-gradient(135deg, #3498db 0%, #2980b9 100%);
+  color: white;
+  padding: 0.5rem 1.25rem;
+  font-size: 0.9rem;
 }
 
-/* ----- Footer ----- */
+/* ===== Footer ===== */
 footer {
+  background: linear-gradient(135deg, #2c3e50 0%, #1a252f 100%);
+  color: white;
   text-align: center;
-  padding: 20px;
-  background-color: rgba(0, 0, 0, 0.8);
+  padding: 1.5rem;
+  margin-top: 3rem;
+  font-size: 0.9rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
 }
 
-/* ----- Responsive (Mobile) ----- */
+/* ===== Responsive ===== */
 @media (max-width: 768px) {
   .menu-toggle {
     display: block;
@@ -304,10 +208,46 @@ footer {
   .nav-links {
     display: none;
     flex-direction: column;
-    align-items: center;
+    position: absolute;
+    top: 70px;
+    left: 0;
+    width: 100%;
+    background: linear-gradient(135deg, #2c3e50 0%, #1a252f 100%);
+    padding: 1rem;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    border-radius: 0 0 12px 12px;
   }
 
   .nav-links.active {
     display: flex;
   }
+
+  .nav-button {
+    width: 100%;
+    text-align: center;
+    margin: 0.25rem 0;
+  }
+
+  .intro {
+    padding: 2rem 1rem;
+  }
+
+  .intro h2 {
+    font-size: 1.8rem;
+  }
 }
+
+/* ===== Animations ===== */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.intro, .card-container {
+  animation: fadeIn 0.6s ease-out forwards;
+}
+
+.card:nth-child(1) { animation-delay: 0.1s; }
+.card:nth-child(2) { animation-delay: 0.2s; }
+.card:nth-child(3) { animation-delay: 0.3s; }
+.card:nth-child(4) { animation-delay: 0.4s; }
