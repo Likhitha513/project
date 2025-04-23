@@ -2,18 +2,19 @@ body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   margin: 0;
   padding: 0;
-  background: url('https://images.unsplash.com/photo-1543321269-9d86d3680e1c') center/cover no-repeat fixed;
-  color: #222;
+  background: url('https://ca-times.brightspotcdn.com/dims4/default/7e8abef/2147483647/strip/true/crop/5000x3333+0+0/resize/2000x1333!/quality/75/?url=https%3A%2F%2Fcalifornia-times-brightspot.s3.amazonaws.com%2Ffb%2F8c%2Fb6e8796e450885f50ea8bc22dbec%2Fap23037523545482.jpg') center/cover no-repeat fixed;
+  color: #333;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
 }
 
 header {
-  background-color: #8e44ad;
+  background-color: grey; 
   color: white;
   padding: 20px;
   text-align: center;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
 }
 
 nav ul {
@@ -22,6 +23,7 @@ nav ul {
   list-style: none;
   padding: 0;
   flex-wrap: wrap;
+  margin: 15px 0 0;
 }
 
 nav ul li {
@@ -32,34 +34,57 @@ nav ul li a {
   color: white;
   text-decoration: none;
   font-weight: bold;
+  padding: 5px 10px;
+  border-radius: 4px;
+  transition: background-color 0.3s;
+}
+
+nav ul li a:hover {
+  background-color: rgba(255, 255, 255, 0.2);
 }
 
 main {
-  padding: 40px;
+  padding: 30px;
   max-width: 800px;
-  margin: 20px auto;
+  margin: 30px auto;
   flex: 1;
-  background-color: rgba(255, 255, 255, 0.9);
+  background-color: rgba(255, 255, 255, 0.85);
   border-radius: 8px;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(2px);
+}
+
+h1 {
+  margin: 0;
+  font-size: 2.5rem;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
 }
 
 h2 {
-  color: #4a148c;
+  color: black;
+  border-bottom: 2px solid #9c4dcc;
+  padding-bottom: 8px;
+  margin-top: 25px;
 }
 
 ul#tipsList {
-  padding-left: 20px;
-  margin-top: 10px;
-  list-style: disc;
+  padding-left: 25px;
+  margin-top: 15px;
+}
+
+ul#tipsList li {
+  margin-bottom: 10px;
+  line-height: 1.5;
+  color: #444;
 }
 
 footer {
-  background-color: #8e44ad;
+  background-color: grey;
   color: white;
   text-align: center;
   padding: 15px;
   margin-top: auto;
+  font-size: 0.9rem;
 }
 
 @media (max-width: 600px) {
@@ -69,11 +94,15 @@ footer {
   }
   
   nav ul li {
-    margin: 5px 0;
+    margin: 8px 0;
   }
   
   main {
     padding: 20px;
-    margin: 10px;
+    margin: 15px;
+  }
+  
+  h1 {
+    font-size: 2rem;
   }
 }
