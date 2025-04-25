@@ -81,9 +81,9 @@ ul#tipsList {
 }
 
 .back-button:hover {
-  background-color: #f5f5f5;
+  background-color: blue;
 }
 
 .next-button:hover {
-  background-color: #7a3a1d;
+  background-color: blue;
 }
