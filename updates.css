@@ -89,3 +89,25 @@ footer {
   text-align: center;
   padding: 10px 0;
 }
+
+/* Navigation Buttons */
+.nav-buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 30px;
+}
+
+.nav-buttons button {
+  padding: 10px 20px;
+  background-color: #d32f2f;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.nav-buttons button:hover {
+  background-color: #b71c1c;
+}
