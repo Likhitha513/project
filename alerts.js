@@ -33,3 +33,12 @@ document.addEventListener("DOMContentLoaded", () => {
     alertsContainer.appendChild(alertCard);
   });
 });
+
+// Navigation functions
+function goBack() {
+  window.location.href = "about.html";
+}
+
+function goNext() {
+  window.location.href = "contact.html";
+}
