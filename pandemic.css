@@ -80,16 +80,16 @@ footer {
   text-decoration: none;
   font-weight: bold;
   transition: all 0.3s;
-  border: 2px solid #8e4421;
+  border: 2px solid white;
 }
 
 .back-button {
   background-color: white;
-  color: #8e4421;
+  color: light blue;
 }
 
 .next-button {
-  background-color: #8e4421;
+  background-color:light blue;
   color: white;
 }
 
