@@ -6,6 +6,7 @@ document.addEventListener("DOMContentLoaded", () => {
     "After: Avoid downed power lines and damaged buildings.",
     "After: Follow official instructions for evacuation or return."
   ];
+
   const tipsList = document.getElementById("tipsList");
   
   tips.forEach((tip, index) => {
