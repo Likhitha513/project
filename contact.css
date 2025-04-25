@@ -1,3 +1,4 @@
+/* Body background and base font styles */
 body {
   font-family: Arial, sans-serif;
   margin: 0;
@@ -7,6 +8,7 @@ body {
   color: #333;
 }
 
+/* Header styles */
 header {
   background-color: #264653;
   color: white;
@@ -14,6 +16,7 @@ header {
   text-align: center;
 }
 
+/* Navigation styles */
 nav ul {
   display: flex;
   justify-content: center;
@@ -36,12 +39,14 @@ nav ul li a.active {
   text-decoration: underline;
 }
 
+/* Main content area */
 main {
   max-width: 800px;
   margin: 40px auto;
   padding: 0 20px;
 }
 
+/* Form and contact info sections */
 .contact-form,
 .contact-info {
   background: white;
@@ -51,12 +56,14 @@ main {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
+/* Form labels */
 form label {
   display: block;
   margin-top: 10px;
   font-weight: bold;
 }
 
+/* Input and textarea styles */
 form input,
 form textarea {
   width: 100%;
@@ -67,6 +74,7 @@ form textarea {
   box-sizing: border-box;
 }
 
+/* Submit button */
 form button {
   margin-top: 15px;
   padding: 10px 20px;
@@ -81,11 +89,13 @@ form button:hover {
   background-color: #21867a;
 }
 
+/* Form status message */
 #statusMessage {
   margin-top: 15px;
   font-weight: bold;
 }
 
+/* Emergency contact info list */
 .contact-info ul {
   list-style: none;
   padding: 0;
@@ -95,8 +105,32 @@ form button:hover {
   margin-bottom: 10px;
 }
 
+/* Footer styles */
 footer {
   background-color: #264653;
   color: white;
   text-align: center;
   padding: 10px 0;
+}
+
+/* Navigation buttons (Next/Back) */
+.nav-buttons {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px 0 40px;
+}
+
+.nav-buttons button {
+  padding: 10px 20px;
+  background-color: #264653;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.nav-buttons button:hover {
+  background-color: #1e3e4d;
+}
