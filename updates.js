@@ -12,3 +12,12 @@ document.addEventListener("DOMContentLoaded", () => {
   
   newUpdatesSection.innerHTML = newUpdate;
 });
+
+// Navigation functions
+function goBack() {
+  window.location.href = "volunteer.html";
+}
+
+function goNext() {
+  window.location.href = "contact.html";
+}
