@@ -3,12 +3,12 @@ document.addEventListener("DOMContentLoaded", () => {
   const confirmationMessage = document.getElementById("confirmationMessage");
 
   form.addEventListener("submit", (event) => {
-    event.preventDefault(); // Prevent form submission
+    event.preventDefault();
 
-    const name = document.getElementById("name").value;
-    const email = document.getElementById("email").value;
-    const phone = document.getElementById("phone").value;
-    const skills = document.getElementById("skills").value;
+    const name = document.getElementById("name").value.trim();
+    const email = document.getElementById("email").value.trim();
+    const phone = document.getElementById("phone").value.trim();
+    const skills = document.getElementById("skills").value.trim();
 
     if (!name || !email || !phone) {
       alert("Please fill in all required fields.");
@@ -17,5 +17,14 @@ document.addEventListener("DOMContentLoaded", () => {
 
     confirmationMessage.textContent = `Thank you for signing up, ${name}! We will get in touch with you soon.`;
     form.reset();
+  });
+
+  // Next and Back buttons
+  document.getElementById("nextButton").addEventListener("click", () => {
+    alert("Next button clicked! (Add navigation logic here)");
+  });
+
+  document.getElementById("backButton").addEventListener("click", () => {
+    alert("Back button clicked! (Add navigation logic here)");
   });
 });
