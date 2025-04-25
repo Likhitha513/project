@@ -1,9 +1,15 @@
 body {
   font-family: Arial, sans-serif;
-  background-color: #f4f6f8;
+  background: url('https://tse1.mm.bing.net/th/id/OIP.ooQ3YKInL44IzSEXvDFTigAAAA?cb=iwc1&w=450&h=342&rs=1&pid=ImgDetMain') no-repeat center center fixed;
+  background-size: cover;
   margin: 0;
   padding: 0;
   color: #333;
+}
+
+.overlay {
+  background-color: rgba(255, 255, 255, 0.9);
+  padding: 30px 0;
 }
 
 header {
