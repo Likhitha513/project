@@ -19,3 +19,12 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   });
 });
+
+// Navigation functions
+function goBack() {
+  window.location.href = "alerts.html";
+}
+
+function goNext() {
+  window.location.href = "index.html";
+}
